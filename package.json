@@ -1,0 +1,18 @@
+{
+  "name": "testcafe-meetup",
+  "version": "0.0.1",
+  "description": "Meetup-31",
+  "main": "index.js",
+  "scripts": {
+    "start": "testcafe chrome index.js",
+    "headless": "testcafe 'chrome:headless' index.js",
+    "mobile": "testcafe 'chrome:emulation:device=iphone 6' index.js",
+    "remote": "testcafe remote index.js --qr-code",
+    "list": "testcafe --list-browsers"
+  },
+  "author": "Carlos Agustín Lima Aceves",
+  "license": "ISC",
+  "dependencies": {
+    "testcafe": "^0.22.0"
+  }
+}
