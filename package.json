@@ -7,12 +7,17 @@
     "start": "testcafe chrome index.js",
     "headless": "testcafe 'chrome:headless' index.js",
     "mobile": "testcafe 'chrome:emulation:device=iphone 6' index.js",
-    "remote": "testcafe remote index.js --qr-code",
-    "list": "testcafe --list-browsers"
+    "remote": "testcafe remote index.js --qr-code --skip-js-errors",
+    "list": "testcafe --list-browsers",
+    "lint": "eslint .; exit 0",
+    "lint-fix": "eslint . --fix; exit 0"
   },
   "author": "Carlos Agustín Lima Aceves",
   "license": "ISC",
   "dependencies": {
     "testcafe": "^0.22.0"
+  },
+  "devDependencies": {
+    "eslint": "5.6.1"
   }
 }
